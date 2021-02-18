@@ -123,17 +123,17 @@
                           </small>
                       </div>
                       <div class="form-group">
-                          <label for="password">Password</label>
-                          <input type="password" id="password" class="form-control" placeholder="Enter password">
+                          <label for="name">Password</label>
+                          <input type="name" id="name" class="form-control" placeholder="Enter your name">
                          
                       </div>
                       <div class="form-group">
-                        <label for="password">Phone Number</label>
-                        <input type="password" id="phone number" class="form-control" placeholder="Enter Phone number">
+                        <label for="phonenumber">Phone Number</label>
+                        <input type="phonenumber" id="phone number" class="form-control" placeholder="Enter Phone number">
                        
                     </div>
                       <div class="form-group">
-                          <label for="gender">How can we help you?</label>
+                          <label for="help">How can we help you?</label>
                           <select class="form-control" id="help">   <option value="feedback">Feedback</option>
                               <option value="suggestion">Suggestion</option>
                               <option value="enquiry">Enquiry</option>
@@ -225,4 +225,12 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/navbar-fixed.js"></script>
 </body>
+    <script>
+     window.localStorage
+        localStorage.setitem("key", "value");
+        var lastname = localStorage.getitem("key");
+        localStorage.removeitem("key");
+        localStorage.clear();
+        var KeyName = localStorage.key(index);
+    </script>
 </html>
