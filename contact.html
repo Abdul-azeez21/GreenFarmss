@@ -117,19 +117,19 @@
                   <form>
                       <div class="form-group">
                           <label for="email">Email address</label>
-                          <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter email">
+                          <input type="email" id="email" class="form-control form-control-lg" value="emailadd" placeholder="Enter email">
                           <small class="form-text text-muted">
                               Your email will not be shared
                           </small>
                       </div>
                       <div class="form-group">
-                          <label for="name">Password</label>
-                          <input type="name" id="name" class="form-control" placeholder="Enter your name">
+                          <label for="name">Name</label>
+                          <input type="name" id="name" class="form-control" value="xxxx" placeholder="Enter your name">
                          
                       </div>
                       <div class="form-group">
                         <label for="phonenumber">Phone Number</label>
-                        <input type="phonenumber" id="phone number" class="form-control" placeholder="Enter Phone number">
+                        <input type="phonenumber" id="phonenumber" class="form-control" value="08023857439" placeholder="Enter Phone number">
                        
                     </div>
                       <div class="form-group">
@@ -144,7 +144,7 @@
                           <label for="message">Messages</label>
                          <textarea class="form-control" id="message" rows="3"></textarea>
                       </div>
-                      <button class="btn btn-outline-success btn-sm">Submit</button>
+                      <button class="btn btn-outline-success btn-sm" type="submit" id="submitform" value="saveform">Submit</button>
                   </form>
                 </p>
               </div>
@@ -226,11 +226,22 @@
       <script src="js/navbar-fixed.js"></script>
 </body>
     <script>
-     window.localStorage
-        localStorage.setitem("key", "value");
-        var lastname = localStorage.getitem("key");
-        localStorage.removeitem("key");
-        localStorage.clear();
-        var KeyName = localStorage.key(index);
+    // var myStorage = "FarmStorage"
+    //     localStorage.setitem("key", "value");
+    //     var lastname = localStorage.getitem("key");
+    //     localStorage.removeitem("key");
+    //     localStorage.clear();
+        // var KeyName = localStorage.key(index);
+
+        var emailAddress = document.getElementById("email").value;
+        var name = document.getElementById("name").value;
+        var phonenumber = document.getElementById("phonenumber").value;
+        var help = document.getElementById("help").value;
+        var message = document.getElementById("message").value;
+
+        var product= {"EmailAddress": emailAddress, "Name": name,  "Phonenumber": phonenumber,
+       }
+        var stringProduct = JSON.stringify(product)
+        localStorage.setItem("FarmStorage", stringProduct);
     </script>
 </html>
