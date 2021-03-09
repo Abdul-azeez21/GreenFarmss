@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">GREEN FARMS</a>
+          <a class="navbar-brand" href="#">Toriola Farms</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -21,7 +21,7 @@
           <div class="collapse navbar-collapse" id="navbarnav">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active"  href="home.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link active" href="about.html">About</a>
@@ -230,23 +230,5 @@
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/navbar-fixed.js"></script>
 </body>
-    <script>
-    // var myStorage = "FarmStorage"
-    //     localStorage.setitem("key", "value");
-    //     var lastname = localStorage.getitem("key");
-    //     localStorage.removeitem("key");
-    //     localStorage.clear();
-        // var KeyName = localStorage.key(index);
-
-        var emailAddress = document.getElementById("email").value;
-        var name = document.getElementById("name").value;
-        var phonenumber = document.getElementById("phonenumber").value;
-        var help = document.getElementById("help").value;
-        var message = document.getElementById("message").value;
-
-        var product= {"EmailAddress": emailAddress, "Name": name,  "Phonenumber": phonenumber,
-       }
-        var stringProduct = JSON.stringify(product)
-        localStorage.setItem("FarmStorage", stringProduct);
-    </script>
+   
 </html>
