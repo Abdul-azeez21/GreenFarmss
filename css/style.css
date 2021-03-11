@@ -36,8 +36,8 @@
     background-size: 100%;
 }
 .product-banner{
-    background-image:url("../images/D0F5CE3E-696F-44A5-BED7-60620C2EDE04.jpg") ;
-    background-size: 100%;
+    background-image:url("../images/E398DC07-54A5-4B14-AD97-70A02D10F2AE.jpg") ;
+    background-size: contain;
 }
 .career-banner{
     background-color: black;
@@ -46,6 +46,11 @@
 .careers-banner{
     background-size: 100%;
 }
+.location{
+    background-image: url("../images/8D201F39-3258-4B8A-B03F-14E0D7C9E639.jpg");
+    background-size:contain;
+}
+
 /* Main Footer */
 footer .main-footer{  padding: 20px 0; margin-top: 30px; background: #252525;}
 footer ul{  padding-left: 0;  list-style: none;}
