@@ -20,6 +20,9 @@
     width: 50%;
     margin: auto;
 }
+.card-img-top:hover{
+    opacity: 0.5;
+}
 .card-home:hover{
     z-index: 999;
     max-height: 800px;
@@ -62,12 +65,14 @@
     max-height: 350px;
     max-width: 340px;
   }
+  
+  
 .background{
     background-image: url("../images/67418136-246C-4E24-8D35-F63C7B947DA2.jpg");
     background-size: 150%;
 }
 .about-banner{
-    background-image: url("../images/26F44B00-F999-41E6-A2F2-0A9B7504B0AE.jpg");
+    background-image: url("../images/C5D2A078-D64E-401A-9B46-E9469AE4CA11.jpg");
     background-size: 100%;
 }
 .bomb{
@@ -93,7 +98,8 @@
     background-color: black;
 }
 .sustain-banner{
-    background-color: black;
+    background-image: url("../images/5615C197-E307-490E-BC34-2697CD8C7D9C.jpg");
+    background-size: 100%;
 }
 
 /* Main Footer */
