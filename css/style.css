@@ -13,8 +13,9 @@
 } */
 
 .big-banner{
-    background-image: url("../images/0FB92D25-6769-4EFF-9E94-3ABD0A4AA864.jpeg");
-    background-size: 100%;
+    background-image: url("../images/C4DDDBB4-EAEA-413B-8829-8CCB13D94DE2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .info-header{
     width: 50%;
@@ -73,7 +74,8 @@
 }
 .about-banner{
     background-image: url("../images/C5D2A078-D64E-401A-9B46-E9469AE4CA11.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .bomb{
     background-color: rgb(6, 37, 6);
@@ -85,7 +87,8 @@
 }
 .career-banner{
     background-image: url("../images/B7C75701-D813-4AFA-9E1D-B97732256E39.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .careers-banner{
     background-size: 100%;
