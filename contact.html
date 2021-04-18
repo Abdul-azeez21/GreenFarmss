@@ -9,9 +9,28 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="index.js"></script>
+    <title>Send Mail</title>
+    <script src=
+      "https://smtpjs.com/v3/smtp.js">
+    </script>
+    
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "abdulazeezojo24@gmail.com",
+          Password: "titilola",
+          To: "abdulazeezojo24@gmail.com",
+          From: "teslimbakare@live.com",
+          Subject: "Sending Email using javascript",
+          Body: "Well that was easy!!",
+        })
+          .then(function (message) {
+            alert("mail sent successfully")
+          });
+      }
+      </script>
+   
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -122,7 +141,7 @@
                   <form method="POST">
                       <div class="form-group">
                           <label for="email">Email address</label>
-                          <input type="email" id="email" class="form-control form-control-lg" value="emailadd" placeholder="Enter email">
+                          <input type="email" id="email" class="form-control form-control-lg"  placeholder="Enter email">
                           <small class="form-text text-muted">
                               Your email will not be shared
                           </small>
@@ -135,7 +154,7 @@
                       <div class="form-group">
                         <label for="phonenumber">Phone Number</label>
                         <input type="phonenumber" id="phonenumber" class="form-control" value="08023857439" placeholder="Enter Phone number">
-                       
+                    
                     </div>
                       <div class="form-group">
                           <label for="help">How can we help you?</label>
@@ -229,6 +248,9 @@
       <script src="js/jquery-3.4.1.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
       <script src="js/navbar-fixed.js"></script>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      
+     
      
      
     
