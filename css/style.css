@@ -96,7 +96,8 @@
 }
 .product-banner{
     background-image:url("../images/E398DC07-54A5-4B14-AD97-70A02D10F2AE.jpg") ;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .career-banner{
     background-image: url("../images/B7C75701-D813-4AFA-9E1D-B97732256E39.jpg");
@@ -108,7 +109,8 @@
 }
 .location{
     background-image: url("../images/8D201F39-3258-4B8A-B03F-14E0D7C9E639.jpg");
-    background-size:contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .produce{
     background-color: black;
