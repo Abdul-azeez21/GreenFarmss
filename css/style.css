@@ -1,7 +1,17 @@
+body{
+    width: 100%;
+}
+section{
+    width: 100%;
+}
 .navbar{
     background-color: #fff;
 
     
+}
+nav{
+    background-color: tomato;
+    width: 100%;
 }
 .navbar .nav-item{
     padding-right: 20px;
@@ -18,7 +28,7 @@
     background-repeat: no-repeat;
 }
 .loca{
-    background-image: url("../images/CDF88332-C201-433E-82A5-C6A4AE734910.jpg");
+    background-image: url("../images/E0D99F02-9F83-4204-A330-BEA81BDA11E9.jpg");
     background-size: cover;
 }
 .flex-container{
@@ -122,6 +132,7 @@
 .card-product{
     width: 360px;
 }
+
 
 
 .flip-card {
