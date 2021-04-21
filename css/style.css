@@ -30,7 +30,10 @@ nav{
 .loca{
     background-image: url("../images/E0D99F02-9F83-4204-A330-BEA81BDA11E9.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
+
 .flex-container{
     display: flex;
     flex-direction: row;
