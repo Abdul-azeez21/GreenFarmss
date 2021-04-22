@@ -9,10 +9,7 @@ section{
 
     
 }
-nav{
-    background-color: tomato;
-    width: 100%;
-}
+
 .navbar .nav-item{
     padding-right: 20px;
 }
@@ -31,9 +28,12 @@ nav{
     background-image: url("../images/E0D99F02-9F83-4204-A330-BEA81BDA11E9.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    
 
 }
-
+ul{
+    list-style-type: none;
+}
 .flex-container{
     display: flex;
     flex-direction: row;
