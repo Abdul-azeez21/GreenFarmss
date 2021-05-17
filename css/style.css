@@ -1,42 +1,81 @@
 body{
     width: 100%;
+    font-family:  'Calibri';
 }
 section{
     width: 100%;
 }
 .navbar{
-    background-color: #fff;
+    background-color:#fff;
 
-    
-}
+  }
 
 .navbar .nav-item{
     padding-right: 20px;
 }
-/* #showcase{
-    background-image: url("../images/32011618-55E5-4CB8-90C7-3C8D576BE54E.jpg");
-    background-position: center;
-    
-} */
+
 
 .big-banner{
     background-image: url("../images/C4DDDBB4-EAEA-413B-8829-8CCB13D94DE2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
-.loca{
+/* .loca{
     background-image: url("../images/E0D99F02-9F83-4204-A330-BEA81BDA11E9.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    
-
-}
+    } */
 ul{
-    list-style-type: none;
+    list-style-type:circle;
 }
-.flex-container{
+/* .flex-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+} */
+.circle{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background:rgb(0, 32, 0) ;
+  line-height: 0;
+  position: relative;
+  border: 3px solid coral;
+}
+.circle-text{
+  position: absolute;
+  bottom: 38%;
+  width: 100%;
+  text-align: center;
+}
+.circle::after{
+  display: block;
+  padding-bottom: 100%;
+}
+.home-loca{
+  background-color: forestgreen;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  background-image: linear-gradient(forestgreen, lawngreen);
+}
+.home-text{
+  border: 1px ;
+  border-style: solid;
+  border-color: coral;
+  width: 155px;
+  border-radius: 10%;
+}
+.contactcolor{
+  background-color: rgb(0, 32, 0);
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+.contactcard{
+  border-radius: 30px;
+}
+.accounts{
+ display: inline-block;
+ width: 100%;
+ padding-left: 12px;
 }
 @media (max-width: 800px) {
     .flex-container {
@@ -49,6 +88,12 @@ ul{
 }
 .card-img-top:hover{
     opacity: 0.5;
+}
+.card-img-top{
+  border-radius: 30px;
+}
+.card-home{
+  border-radius: 30px;
 }
 .card-home:hover{
     z-index: 999;
@@ -82,8 +127,25 @@ ul{
   -webkit-box-shadow: 60px 60px 20px RGBA(142, 142, 142, .6);
           box-shadow: 60px 60px 20px RGBA(142, 142, 142, .6);
 }
+.home-body{
+  background-color: forestgreen;
+  transition: background-color 1s linear;
+}
+.home-body:hover{
+  background-color:  rgb(0, 32, 0);
+}
 .home-cont{
     background-image: url("../images/D0F5CE3E-696F-44A5-BED7-60620C2EDE04.jpg");
+}
+.bomb2{
+background-color: rgb(0, 32, 0);
+border-bottom-left-radius: 25% ;
+border-bottom-right-radius: 25%;
+border-top-right-radius: 25% ;
+border-top-left-radius: 25% ;
+}
+.home-image{
+  border-radius: 30px;
 }
 .underlay{
     /*display: none;*/
@@ -134,6 +196,7 @@ ul{
 }
 .card-product{
     width: 360px;
+    border-radius: 30px;
 }
 
 
@@ -144,6 +207,7 @@ ul{
     height: 250px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 30px;
   }
   
   /* This container is needed to position the front and back side */
@@ -154,6 +218,7 @@ ul{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border-radius: 30px;
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -168,17 +233,19 @@ ul{
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    border-radius: 30px;
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: #bbb;
     color: black;
+    border-radius: 30px;
   }
   
   /* Style the back side */
   .flip-card-back {
-    background-color: #fff;
+    background-color: rgb(0, 32, 0);
     color: white;
     transform: rotateY(180deg);
   }
