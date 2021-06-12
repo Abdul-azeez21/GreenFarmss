@@ -1,228 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T | Contact</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Send Mail</title>
-    <script src=
-      "https://smtpjs.com/v3/smtp.js">
-    </script>
-    
-    <script type="text/javascript">
-      function sendEmail() {
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "abdulazeezojo24@gmail.com",
-          Password: "titilola",
-          To: "abdulazeezojo24@gmail.com",
-          From: "teslimbakare@live.com",
-          Subject: "Sending Email using javascript",
-          Body: "Well that was easy!!",
-        })
-          .then(function (message) {
-            alert("mail sent successfully")
-          });
-      }
-      </script>
-   
+	<title></title>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>  
+	<script type="text/javascript">
+		function sendEmail() {
+			Email.send({
+				Host: "smtp.gmail.com",
+				Username : "teslimbakare@gmail.com",
+				Password : "@Daketima1",
+				To : 'teslimbakare@live.com',
+				From : "teslimbakare@gmail.com",
+				Subject : "test",
+				Body : "testing",
+			})
+			.then(function(message){
+				alert("mail sent successfully")
+			});
+		}
+	</script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/PHOTO-2021-03-06-18-04-11 logo.jpg" height="60px" width="150px" alt=""></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarnav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarnav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active"  href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="product.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="careers.html">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="sustainability.html">Sustainability</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact Us</a>
-              </li>
-              
-      </nav>
-
-      <section id="contactus" class="py-5 text-center">
-        <div class="row">
-          <div class="col">
-            <div class="info-header mb-5 border-bottom">
-              <h1 class="text-success pb-3">Contact us</h1>
-              <p class="lead pb-3 text-dark">Please contact us with the details below if you have any question or enquiry.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contactus" class="py-5 text-center contactcolor">
-        <div class="row">
-          <div class="col">
-            <div class="info-header mb-5">
-              <h4 class="text-warning pb-3">Helpline</h4>
-              <p class="text-white">Our phone will be on from 8:30am to 4pm, Mondays to Fridays.</p>
-              <p class="text-white">+234 817 042 2291</p>
-              
-              <h4 class="text-warning pb-3">Email</h4>
-              <p class="text-white">All official correspondence should be forwarded to</p>
-              <p class="text-white">info@toriolafarms.com</p>
-              <h4 class="text-warning pb-3">Connect with us</h4>
-              <p>
-                <ul class="accounts">
-                  <a href="https://www.facebook.com/profile.php?id=100067911163393"  class="fa fa-facebook" style="font-size:24px; color: #fff;" aria-hidden="true"></a>
-                  <a href="https://mobile.twitter.com/ToriolaFarms"  class="fa fa-twitter"  style="font-size:24px; color: #fff;" aria-hidden="true"></a>
-                  <a href="https://www.linkedin.com/company/toriola-farms" class="fa fa-linkedin"  style="font-size:24px; color: #fff;" aria-hidden="true"></a>
-                  </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      <section class="mt-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-6">     <div class="card shadow-sm mt-3 mb-3 ml-5 contactcard">
-              <div class="card-body">
-                <h5 class="text-center" style="color: rgb(27, 145, 27);">Contact/Enquiry Form</h5>
-                <p>
-                  <form method="POST">
-                      <div class="form-group">
-                          <label for="email">Email address</label>
-                          <input type="email" id="email" class="form-control form-control-lg"  placeholder="Enter email">
-                          <small class="form-text text-muted">
-                              Your email will not be shared
-                          </small>
-                      </div>
-                      <div class="form-group">
-                          <label for="name">Name</label>
-                          <input type="name" id="name" class="form-control" value="xxxx" placeholder="Enter your name">
-                         
-                      </div>
-                      <div class="form-group">
-                        <label for="phonenumber">Phone Number</label>
-                        <input type="phonenumber" id="phonenumber" class="form-control" value="08023857439" placeholder="Enter Phone number">
-                    
-                    </div>
-                      <div class="form-group">
-                          <label for="help">How can we help you?</label>
-                          <select class="form-control" id="help">   <option value="feedback">Feedback</option>
-                              <option value="suggestion">Suggestion</option>
-                              <option value="enquiry">Enquiry</option>
-                              <option value="other">Other</option>
-                            </select>
-                        </div>
-                      <div class="form-group">
-                          <label for="message">Messages</label>
-                         <textarea class="form-control" id="message" rows="3"></textarea>
-                      </div>
-                      <button class="btn btn-outline-success btn-sm" type="submit" id="submitform" value="saveform">Submit</button>
-                      <input type="button" value="SendEmail" onclick="sendEmail()">
-                  </form>
-                </p>
-              </div>
-            </div></div>
-            <div class="col-xs-6 pl-5 pt-3"> <div class="info-header mb-5">
-              <h5 class=" pb-3" style="color: rgb(27, 145, 27);">Find us at</h5>
-              <h5>Ashipa Office</h5>
-              <p>Odedeyi-Asero, Ashipa, Obafemi Owode, Abeokuta, Ogun state, Nigeria.</p>
-              <h5>Berger Office</h5>
-              <p>Ogun-River Close Isheri-Oke, off Wilmer Road, Ojodu-Berger, Lagos state, Nigeria.</p>
-              <h5>Ikorodu Office</h5>
-              <p>Plot 46, Odogunyan fish farm estate, Ikorodu, Lagos state, Nigeria.</p>
-            </div></div>
-          </div>
-        </div>
-      </section>
-
-
-      <footer id="footer" class="footer-1 mt-1">
-        <div class="main-footer widgets-dark typo-light">
-        <div class="container">
-        <div class="row">
-          
-        <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="widget subscribe no-box">
-        <h5 class="widget-title">TORIOLA FARMS<span></span></h5>
-       
-        </div>
-        </div>
-        
-        <div class="col-xs-12 col-sm-6 col-md-4">
-        <div class="widget no-box">
-        <h5 class="widget-title">Navigation<span></span></h5>
-        <ul class="thumbnail-widget">
-        <li>
-        <div class="thumb-content"><a href="about">About</a></div> 
-        </li>
-        <li>
-        <div class="thumb-content"><a href="product">Products</a></div> 
-        </li>
-        <li>
-        <div class="thumb-content"><a href="careers">Careers</a></div> 
-        </li>
-        </ul>
-        </div>
-        </div>
-        
-        
-        <div class="col-xs-12 col-sm-6 col-md-4">
-        
-        <div class="widget no-box">
-        <h5 class="widget-title">Contact Us<span></span></h5>
-        
-        <p><a href="mailto:info@toriolafarms.com" >info@toriolafarms.com</a></p>
-        <ul class="social-footer2">
-          <a href="https://www.facebook.com/profile.php?id=100067911163393"  class="fa fa-facebook" style="font-size:24px; color: #fff;" aria-hidden="true"></a>
-          <a href="https://mobile.twitter.com/ToriolaFarms"  class="fa fa-twitter"  style="font-size:24px; color: #fff;" aria-hidden="true"></a>
-          <a href="https://www.linkedin.com/company/toriola-farms" class="fa fa-linkedin"  style="font-size:24px; color: #fff;" aria-hidden="true"></a>
-        </ul>
-        </div>
-        </div>
-        
-        </div>
-        </div>
-        </div>
-          
-        <div class="footer-copyright">
-        <div class="container">
-        <div class="row">
-        <div class="col-md-12 text-center">
-        <p>Copyright TORIOLA FARMS © 2021. All rights reserved.</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </footer>
-
-      <script src="js/jquery-3.4.1.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/navbar-fixed.js"></script>
-      <script src="https://smtpjs.com/v3/smtp.js"></script>
-      
-     
-     
-     
-    
+<body>  
+	<form method="post">
+		<input type="button" value="Send Email" onclick="sendEmail()"/>
+	</form>  
 </body>
-   
 </html>
