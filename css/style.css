@@ -1,6 +1,5 @@
 body{
     width: 100%;
-    font-family:  'Calibri';
 }
 section{
     width: 100%;
@@ -10,7 +9,7 @@ section{
 
   }
 
-.navbar .nav-item{
+.nav-item{
     padding-right: 20px;
 }
 .nav-item:hover{
@@ -131,10 +130,6 @@ ul{
   -webkit-box-shadow: 60px 60px 20px RGBA(142, 142, 142, .6);
           box-shadow: 60px 60px 20px RGBA(142, 142, 142, .6);
 }
-
-.home-cont{
-    background-image: url("../images/D0F5CE3E-696F-44A5-BED7-60620C2EDE04.jpg");
-}
 .home-image{
   border-radius: 30px;
 }
@@ -183,7 +178,8 @@ ul{
 }
 .sustain-banner{
     background-image: url("../images/5615C197-E307-490E-BC34-2697CD8C7D9C.jpg");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .card-product{
     width: 360px;
